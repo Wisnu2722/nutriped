@@ -132,7 +132,7 @@
 				<div class="container-fluid">
 					
 					<div class="row">
-						<div class="col-6 ">
+						<div class="col-md-6 col-12">
 							<h4>Analisis Sekarang</h4>
 							<h2>Body Mass Index (BMI)</h2>
 							<br>
@@ -144,18 +144,18 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="row">
-											<div class="col-md-6 tinggi">
-												<div class="form-group">
-													<h5>Tinggi (cm)</h5>
-													<input type="number" name="tinggi" placeholder="" size="25">
-												</div>
+											<div class="col-md-6 col-12 tinggi form-input">
+												
+													<p>Tinggi (cm)</p>
+													<input type="number" name="tinggi" placeholder=""  required="">
+												
 											</div>
 
-											<div class="col-md-5 berat">
-												<div class="form-group">
-													<h5>Berat (kg)</h5>
-													<input type="number" name="berat" placeholder="" size="15">
-												</div>
+											<div class="col-md-6 col-12 berat">
+												
+													<p>Berat (kg)</p>
+													<input type="number" name="berat" placeholder=""  required="">
+												
 											</div>
 											<div class="col-md-12">
 												<button class="btn btn-primary btn-sm btn-block" name="hitung">HITUNG</button>
@@ -165,8 +165,8 @@
 								</div>
 							</form>
 						</div>
-						<div class="col-6 ">
-						<div class="result shadow">
+						<div class="col-md-6 col-12">
+							<div class="result shadow">
 								<div class="row">
 									<div class="col-md-2">
 										<div class="tingkat-1"></div>
@@ -191,6 +191,20 @@
 			</div>
 		</div>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button[name=hitung]").on("click",function(){
+			var tinggi = $("input[name=tinggi]").val();
+			var berat = $("input[name=berat]").val();
+			$.ajax({
+				type:POST,
+				url:"<?php echo base_url("ajax/hitung_bmi") ?>",
+				data:"tinggi="+tinggi+"&berat="+berat,
+			})
+		})
+	})
+</script>
 	</body>
 	</html>
