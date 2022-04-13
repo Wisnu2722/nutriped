@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+	font-family: 'Poppins';
+	font-style: normal;
+
+}
+nav{
+	
+	width: 100%;
+	height: 10%;
+	left: 0px;
+	top: 0px;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	background: linear-gradient(91.66deg, #4655E4 51.83%, #50BFFD 95.84%);
+}
+#nutri
+{	
+	position: relative;
+	
+	font-weight: 700;
+	font-size: 28px;
+	display:flex; flex-direction:column;
+	/* identical to box height */
+
+	letter-spacing: 0.01em;
+
+	color: #FFFFFF;
+	text-transform: uppercase;
+	margin-top: 10px;	
+	
+	transform: translateX(-15%);
+	transform: translateY(-15%);
+
+}
+
+#img-nutri
+{
+	transform: translateX(25%);
+	
+}
+
+
+#img-nutri img
+{
+	width: 70%;
+}
+
+#sub-nutri
+{
+position: absolute;
+	
+	font-weight: 400;
+	font-size: 9px;
+
+	/* identical to box height */
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	transform: translateX(-995%);
+	transform: translateY(92%);
+	
+}
+
+
+ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+
+ul li
+{
+	justify-content: center;
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+.nav-menu
+{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0 15px;
+
+
+	/* identical to box height */
+
+	letter-spacing: 0.01em;
+
+	color: #FFFFFF;
+
+}
+
+.segi-3
+{
+	background: red;
+	clip-path:  polygon(0% 100%, 50% 0%, 100% 100%);
+}
+
+.btn-login
+{
+	text-align: center;
+	vertical-align: middle;
+	transform: translateY(-10%);
+	line-height: 20px;
+	width: 140px;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+	
+	font-weight: 200;
+	background:transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	
+}
+
+.btn-sign-up
+{
+	text-align: center;
+	vertical-align: middle;
+	transform: translateY(-10%);
+	line-height: 20px;
+	width: 140px;
+	color: #4655E4;
+	background: #FFFFFF;
+	border-radius: 5px;
+	
+	font-weight: 200;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+
+}
+
+.btn-sign-up:hover
+{
+	background:  #4655E4;
+	color: #FFFFFF;
+	transition: 0.6s;
+}
+
+.content
+{
+	margin-top: 90px;
+}
+
+p
+{
+	width: 70%;
+	font-weight: 500;
+font-size: 16px;
+line-height: 39px;
+letter-spacing: 0.01em;
+}
+
+input[name=tinggi], input[name=berat]
+{
+	background: #FFFFFF;
+border: 2px solid #BFBFBF;
+box-sizing: border-box;
+border-radius: 5px;
+width: 90px;
+height: 70px;
+text-align: center;
+vertical-align: middle;
+font-size: 22px;
+font-weight: 600;
+}
+
+
+button[name=hitung]
+{
+	margin-top: 20px;
+	width: 85%;
+	background: #4655E4;
+border-radius: 5px;
+height: 50px;
+}
+
+
+button[name=hitung]:hover
+{
+	/*background: #4655E4;*/
+	/*background: transparent;*/
+	color: #ffffff;
+	background: linear-gradient(91.66deg, #4655E4 25.83%, #50BFFD 95.84%);
+	
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}	
+
+.result
+{
+
+	box-shadow: 6px 6px 6px 6px rgba(255, 255, 255, 0.9);
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+.tingkat-1,.tingkat-2,.tingkat-3,.tingkat-4,.tingkat-5,.tingkat-6
+{
+	width: 80px;
+	height: 77px;
+}
+
+.tingkat-1
+{
+	background: #50BFFD;
+}
+
+.tingkat-2
+{
+	background: #1AA028;
+}
+
+.tingkat-3
+{
+	background: #2AEB3D;
+}
+
+.tingkat-4
+{
+	background: #FFEC43;
+}
+
+.tingkat-5
+{
+	background: #FFCA43;
+}
+
+.tingkat-6
+{
+	background: #FF4343;
+}
+
+
