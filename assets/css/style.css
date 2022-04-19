@@ -67,20 +67,7 @@ position: absolute;
 }
 
 
-ul
-{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 10px 0;
-}
 
-ul li
-{
-	justify-content: center;
-	list-style: none;
-	display: inline-block;
-	margin: 0 10px;
-}
 .nav-menu
 {
 	text-decoration: none;
@@ -170,7 +157,7 @@ width: 90px;
 height: 70px;
 text-align: center;
 vertical-align: middle;
-font-size: 22px;
+font-size: 20px;
 font-weight: 600;
 }
 
@@ -205,7 +192,6 @@ input::-webkit-inner-spin-button {
 
 	box-shadow: 6px 6px 6px 6px rgba(255, 255, 255, 0.9);
 	vertical-align: middle;
-	padding-right: 20px;
 }
 
 .tingkat-1,.tingkat-2,.tingkat-3,.tingkat-4,.tingkat-5,.tingkat-6
@@ -244,4 +230,37 @@ input::-webkit-inner-spin-button {
 	background: #FF4343;
 }
 
+.tipis
+{
+	font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #B2B2B2;
+}
+
+.card-kalkulator .card-header
+{
+text-align: center;
+vertical-align: middle;
+}
+
+.card-kalkulator .card-header h6
+{
+color: #FFFFFF;
+}
+
+.menu-lain li
+{ 
+	margin-bottom : 10px;
+	margin-top : 5px;
+}
+.menu-lain li a
+{
+	text-decoration: none;
+	list-style: none;
+	margin-bottom: 10px;
+	color: #000000;
+}
 
